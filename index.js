@@ -24,7 +24,7 @@ const Events_1 = __importDefault(require("./Classes/Events"));
 const Event_1 = __importDefault(require("./Classes/Event"));
 const Scene_1 = __importDefault(require("./Classes/Scene"));
 const ScenesManager_1 = __importDefault(require("./Classes/ScenesManager"));
-const INDEX = {
+module.exports = {
     Engine: GameEngine_1.default,
     Animation: Animation_1.default,
     Asset: Asset_1.default,
@@ -47,4 +47,3 @@ const INDEX = {
     Scene: Scene_1.default,
     ScenesManager: ScenesManager_1.default,
 };
-exports.default = INDEX;
