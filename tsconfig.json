@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es5", // Especifica la versión de ECMAScript de destino para la salida de JavaScript.
+        "module": "commonjs", // Define el sistema de módulos.
+        "lib": [
+            "dom",
+            "es6",
+            "dom.iterable",
+            "scripthost"
+        ], // Lista de bibliotecas de declaración de archivos a incluir en la compilación.
+        "outDir": "./dist", // Redirige la salida a esta carpeta.
+        "rootDir": "./src", // Especifica la carpeta raíz desde donde se compilan los archivos.
+        "strict": true, // Habilita todas las opciones estrictas de tipo.
+        "esModuleInterop": true, // Habilita la interoperabilidad de módulos ES6 con módulos CommonJS/AMD.
+        "skipLibCheck": true, // Omite la verificación de tipos para todas las declaraciones en los archivos .d.ts.
+        "forceConsistentCasingInFileNames": true // Asegura que la capitalización sea consistente en las referencias a archivos.
+    },
+    "include": [
+        "src/**/*" // Incluye todos los archivos TypeScript en la carpeta 'src' y subcarpetas.
+    ],
+    "exclude": [
+        "node_modules", // Excluye la carpeta 'node_modules'.
+        "**/*.spec.ts" // Excluye los archivos de pruebas.
+    ]
+}
