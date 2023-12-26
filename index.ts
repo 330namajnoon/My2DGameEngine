@@ -20,6 +20,8 @@ import Event from "./Classes/Event";
 import Scene from "./Classes/Scene";
 import ScenesManager from "./Classes/ScenesManager";
 
+export {default} from "./GameEngine";
+
 module.exports = {
     Engine,
     Animation,
