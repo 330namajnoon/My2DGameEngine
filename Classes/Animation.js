@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Animation = void 0;
 class Animation {
     constructor(name, totalFrame, sprites) {
         this.loop = true;
@@ -49,4 +50,4 @@ class Animation {
         return this.sprites[index];
     }
 }
-exports.default = Animation;
+exports.Animation = Animation;

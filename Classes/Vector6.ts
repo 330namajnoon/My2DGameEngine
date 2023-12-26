@@ -1,5 +1,5 @@
 
-export default class Vector6 {
+export class Vector6 {
     x: number;
     y: number;
     w: number;

@@ -1,10 +1,10 @@
-import ChildrensManager from "./ChildrensManager";
-import EntityManager from "./EntitysManager";
-import ScriptsManager from "./ScriptsManager";
-import Vector2 from "./Vector2";
+import { ChildrensManager } from "./ChildrensManager";
+import { EntityManager } from "./EntitysManager";
+import { ScriptsManager } from "./ScriptsManager";
+import { Vector2 } from "./Vector2";
 
 
-export default class Entity {
+export class Entity {
     name: string;
     position: Vector2;
     rotation: number;

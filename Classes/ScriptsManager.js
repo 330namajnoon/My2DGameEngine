@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ScriptsManager = void 0;
 class ScriptsManager {
     constructor(entity, app) {
         this.scripts = [];
@@ -23,4 +24,4 @@ class ScriptsManager {
         });
     }
 }
-exports.default = ScriptsManager;
+exports.ScriptsManager = ScriptsManager;

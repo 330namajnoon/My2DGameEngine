@@ -1,11 +1,9 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PhisicBody = void 0;
 const matter_js_1 = require("matter-js");
-const App_1 = __importDefault(require("./App"));
-class PhisicBody extends App_1.default {
+const App_1 = require("./App");
+class PhisicBody extends App_1.App {
     constructor(x, y, polygons = [[new matter_js_1.Vector()]], options, app) {
         super(app);
         this.body = matter_js_1.Bodies.fromVertices(x, y, polygons, options, true);
@@ -25,4 +23,4 @@ class PhisicBody extends App_1.default {
         }
     }
 }
-exports.default = PhisicBody;
+exports.PhisicBody = PhisicBody;

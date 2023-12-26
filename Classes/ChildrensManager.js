@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ChildrensManager = void 0;
 class ChildrensManager {
     constructor(entity) {
         this.childrens = [];
@@ -23,4 +24,4 @@ class ChildrensManager {
         });
     }
 }
-exports.default = ChildrensManager;
+exports.ChildrensManager = ChildrensManager;

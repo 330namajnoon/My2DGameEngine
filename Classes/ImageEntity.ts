@@ -1,13 +1,13 @@
-import AnimationManager from "./AnimationsManager";
-import Animation from "./Animation";
-import Entity from "./Entity";
-import Vector2 from "./Vector2";
-import Events from "./Events";
-import ScriptsManager from "./ScriptsManager";
-import GameEngine from "../GameEngine";
+import { AnimationManager } from "./AnimationsManager";
+import { Animation } from "./Animation";
+import { Entity } from "./Entity";
+import { Vector2 } from "./Vector2";
+import { Events } from "./Events";
+import { ScriptsManager } from "./ScriptsManager";
+import { GameEngine } from "../GameEngine";
 
 export type SideType = "LEFT" | "RIGHT" | "TOP" | "BOTTOM" | "LEFT_TOP" | "LEFT_BOTTOM" | "RIGHT_TOP" | "RIGHT_BOTTOM";
-export default class ImageEntity extends Entity {
+export class ImageEntity extends Entity {
     app: GameEngine;
     side: SideType;
     animations: AnimationManager;
@@ -18,7 +18,7 @@ export default class ImageEntity extends Entity {
         this.animations = new AnimationManager(sprites);
         this.side = side;
         this.app = app;
-        this.scripts = new ScriptsManager<ImageEntity>(this,this.app);
+        this.scripts = new ScriptsManager<ImageEntity>(this, this.app);
     }
 
     draw = () => {

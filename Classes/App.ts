@@ -1,10 +1,10 @@
-import GameEngine from "../GameEngine";
+import { GameEngine } from "../GameEngine";
 
 
-export default class App {
+export class App {
     app: GameEngine;
 
-    constructor (app: GameEngine) {
+    constructor(app: GameEngine) {
         this.app = app;
     }
 }

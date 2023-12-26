@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PhysicsEnginManager = void 0;
 const matter_js_1 = require("matter-js");
 class PhysicsEnginManager {
     constructor() {
@@ -12,4 +13,4 @@ class PhysicsEnginManager {
         matter_js_1.Engine.update(this.engine, 1000 / 60);
     }
 }
-exports.default = PhysicsEnginManager;
+exports.PhysicsEnginManager = PhysicsEnginManager;

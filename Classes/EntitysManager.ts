@@ -1,21 +1,21 @@
-import Entity from "./Entity";
-import ImageEntity from "./ImageEntity";
+import { Entity } from "./Entity";
+import { ImageEntity } from "./ImageEntity";
 
 export type EntityTypeMap = {
     imageEntity: ImageEntity;
 };
 
-export type EntityType = ImageEntity | Entity; 
+export type EntityType = ImageEntity | Entity;
 
-export default class EntityManager {
+export class EntityManager {
     entitys: any[] = [];
 
-    find<T extends keyof EntityTypeMap>(type: T ,name: string): EntityTypeMap[T] {
-        const entity =  this.entitys.find(e => e.getName() === name);
+    find<T extends keyof EntityTypeMap>(type: T, name: string): EntityTypeMap[T] {
+        const entity = this.entitys.find(e => e.getName() === name);
         return entity ? entity : null;
     }
 
-    append<T extends keyof EntityTypeMap>(type: T, entity: EntityTypeMap[T]):void {
+    append<T extends keyof EntityTypeMap>(type: T, entity: EntityTypeMap[T]): void {
         this.entitys.push(entity);
     }
 

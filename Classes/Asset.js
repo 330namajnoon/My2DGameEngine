@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Asset = void 0;
 class Asset {
     constructor(name, type, url) {
         this.name = name;
@@ -20,4 +21,4 @@ class Asset {
         }
     }
 }
-exports.default = Asset;
+exports.Asset = Asset;

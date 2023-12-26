@@ -1,6 +1,6 @@
 
 import { Body, Query } from "matter-js";
-import Event from "./Event";
+import { Event } from "./Event";
 
 export type MouseEventMap = {
     mousedown: MouseEvent;
@@ -13,7 +13,7 @@ export type KeyboardEventMap = {
     keypress: KeyboardEvent;
 }
 
-export default class Events {
+export class Events {
     private isKeyDown: boolean = false;
     private events: Event<any>[] = [];
     private callingEvents: { e: KeyboardEvent, event: Event<any> }[] = [];
@@ -43,7 +43,7 @@ export default class Events {
                 this.events.forEach(e_ => {
                     if (e_.type === "keydown" && e_.key === e.key) {
                         const event = this.callingEvents.find(_e_ => _e_.event.key === e.key);
-                        this.callingEvents.push({e,event:e_});
+                        this.callingEvents.push({ e, event: e_ });
                     }
                 })
                 this.isKeyDown = true;

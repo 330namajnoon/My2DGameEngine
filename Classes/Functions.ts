@@ -1,9 +1,9 @@
 
 
-export default class Functions {
+export class Functions {
     functions: any[] = [];
 
-    append(function_: any ) {
+    append(function_: any) {
         this.functions = function_
     }
 

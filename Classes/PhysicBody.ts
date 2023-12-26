@@ -1,9 +1,9 @@
 import { Bodies, Body, IBodyDefinition, Vector } from "matter-js";
-import GameEngine from "../GameEngine";
-import App from "./App";
+import { GameEngine } from "../GameEngine";
+import { App } from "./App";
 
 
-export default class PhisicBody extends App {
+export class PhisicBody extends App {
     body: Body;
     polygons: Vector[][];
     constructor(x: number, y: number, polygons: Vector[][] = [[new Vector()]], options: IBodyDefinition | undefined, app: GameEngine) {

@@ -1,6 +1,6 @@
 
 
-export default class Vector4 {
+export class Vector4 {
     x: number;
     y: number;
     constructor(x: number, y: number) {

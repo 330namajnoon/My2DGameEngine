@@ -1,19 +1,19 @@
 import { IBodyDefinition, Vector } from "matter-js";
-import Animation from "./Classes/Animation";
-import Asset from "./Classes/Asset";
-import AssetsManager from "./Classes/AssetsManager";
-import Entity from "./Classes/Entity";
-import EntityManager from "./Classes/EntitysManager";
-import Events from "./Classes/Events";
-import Functions from "./Classes/Functions";
-import ImageEntity, { SideType } from "./Classes/ImageEntity";
-import PhisicBody from "./Classes/PhysicBody";
-import PhysicsEnginManager from "./Classes/PhysicsEnginManager.ts";
-import ScenesManager from "./Classes/ScenesManager";
-import ScriptsManager from "./Classes/ScriptsManager";
-import Vector2 from "./Classes/Vector2";
+import { Animation } from "./Classes/Animation";
+import { Asset } from "./Classes/Asset";
+import { AssetsManager } from "./Classes/AssetsManager";
+import { Entity } from "./Classes/Entity";
+import { EntityManager } from "./Classes/EntitysManager";
+import { Events } from "./Classes/Events";
+import { Functions } from "./Classes/Functions";
+import { ImageEntity, SideType } from "./Classes/ImageEntity";
+import { PhisicBody } from "./Classes/PhysicBody";
+import { PhysicsEnginManager } from "./Classes/PhysicsEnginManager.ts";
+import { ScenesManager } from "./Classes/ScenesManager";
+import { ScriptsManager } from "./Classes/ScriptsManager";
+import { Vector2 } from "./Classes/Vector2";
 import engineContext from "./Contexts/EngineContext";
-import Scene from "./Classes/Scene";
+import { Scene } from "./Classes/Scene";
 
 export class GameEngine {
     engine: PhysicsEnginManager = new PhysicsEnginManager();

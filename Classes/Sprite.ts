@@ -1,8 +1,8 @@
-import Vector6 from "./Vector6";
+import { Vector6 } from "./Vector6";
 
-export type CallBackType  = (frame: number | boolean) => void;
+export type CallBackType = (frame: number | boolean) => void;
 
-export default class Sprite {
+export class Sprite {
     image: HTMLImageElement;
     cutting: Vector6 | null;
     frame: number;
@@ -13,7 +13,7 @@ export default class Sprite {
         this.frame = frame;
     }
 
-    setCallBack( callBack: CallBackType): void {
+    setCallBack(callBack: CallBackType): void {
         this.callBacks.push(callBack);
     }
 

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Vector6 = void 0;
 class Vector6 {
     constructor(x, y, w, h, xs, ys, ws, hs, orgX, orgY) {
         this.x = x;
@@ -14,4 +15,4 @@ class Vector6 {
         this.orgY = orgY;
     }
 }
-exports.default = Vector6;
+exports.Vector6 = Vector6;

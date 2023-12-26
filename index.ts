@@ -1,46 +1,23 @@
-
-import Animation from "./Classes/Animation";
-import Asset from "./Classes/Asset";
-import AssetsManager from "./Classes/AssetsManager";
-import Entity from "./Classes/Entity";
-import EntityManager from "./Classes/EntitysManager";
-import ImageEntity from "./Classes/ImageEntity";
-import Script from "./Classes/Script";
-import ScriptsManager from "./Classes/ScriptsManager";
-import Vector2 from "./Classes/Vector2";
-import Vector6 from "./Classes/Vector6";
-import Sprite from "./Classes/Sprite";
-import PhysicsEnginManager from "./Classes/PhysicsEnginManager.ts";
-import PhysicBody from "./Classes/PhysicBody";
-import ChildrensManager from "./Classes/ChildrensManager";
-import Functions from "./Classes/Functions";
-import AnimationManager from "./Classes/AnimationsManager";
-import Events from "./Classes/Events";
-import Event from "./Classes/Event";
-import Scene from "./Classes/Scene";
-import ScenesManager from "./Classes/ScenesManager";
-
+import * as matterjs from "matter-js";
+export {matterjs};
+export {Animation} from "./Classes/Animation";
+export {Asset} from "./Classes/Asset";
+export {AssetsManager} from "./Classes/AssetsManager";
+export {Entity} from "./Classes/Entity";
+export {EntityManager} from "./Classes/EntitysManager";
+export {ImageEntity} from "./Classes/ImageEntity";
+export {Script} from "./Classes/Script";
+export {ScriptsManager} from "./Classes/ScriptsManager";
+export {Vector2} from "./Classes/Vector2";
+export {Vector6} from "./Classes/Vector6";
+export {Sprite} from "./Classes/Sprite";
+export {PhysicsEnginManager} from "./Classes/PhysicsEnginManager.ts";
+export {PhisicBody} from "./Classes/PhysicBody";
+export {ChildrensManager} from "./Classes/ChildrensManager";
+export {Functions} from "./Classes/Functions";
+export {AnimationManager} from "./Classes/AnimationsManager";
+export {Events} from "./Classes/Events";
+export {Event} from "./Classes/Event";
+export {Scene} from "./Classes/Scene";
+export {ScenesManager} from "./Classes/ScenesManager";
 export {GameEngine} from "./GameEngine"
-
-module.exports = {
-    Animation,
-    Asset,
-    AssetsManager,
-    Entity,
-    EntityManager,
-    ImageEntity,
-    Script,
-    ScriptsManager,
-    Vector2,
-    Vector6,
-    Sprite,
-    PhysicsEnginManager,
-    PhysicBody,
-    ChildrensManager,
-    Functions,
-    AnimationManager,
-    Events,
-    Event,
-    Scene,
-    ScenesManager,
-}

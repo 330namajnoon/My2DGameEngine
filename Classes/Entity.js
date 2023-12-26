@@ -1,13 +1,11 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const ChildrensManager_1 = __importDefault(require("./ChildrensManager"));
-const Vector2_1 = __importDefault(require("./Vector2"));
+exports.Entity = void 0;
+const ChildrensManager_1 = require("./ChildrensManager");
+const Vector2_1 = require("./Vector2");
 class Entity {
-    constructor(name = "New entity", position = new Vector2_1.default(0, 0), rotation = 0, size = new Vector2_1.default(100, 100)) {
-        this.childrens = new ChildrensManager_1.default(this);
+    constructor(name = "New entity", position = new Vector2_1.Vector2(0, 0), rotation = 0, size = new Vector2_1.Vector2(100, 100)) {
+        this.childrens = new ChildrensManager_1.ChildrensManager(this);
         this.name = name;
         this.position = position;
         this.rotation = rotation;
@@ -26,4 +24,4 @@ class Entity {
         return this.size;
     }
 }
-exports.default = Entity;
+exports.Entity = Entity;

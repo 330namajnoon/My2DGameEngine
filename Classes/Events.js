@@ -1,10 +1,8 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Events = void 0;
 const matter_js_1 = require("matter-js");
-const Event_1 = __importDefault(require("./Event"));
+const Event_1 = require("./Event");
 class Events {
     constructor() {
         this.isKeyDown = false;
@@ -59,10 +57,10 @@ class Events {
         });
     }
     mouseOn(type, callBack, bodys = []) {
-        this.events.push(new Event_1.default(type, callBack, bodys, null));
+        this.events.push(new Event_1.Event(type, callBack, bodys, null));
     }
     keyboardOn(type, key, callBack) {
-        this.events.push(new Event_1.default(type, callBack, [], key));
+        this.events.push(new Event_1.Event(type, callBack, [], key));
     }
     calling() {
         this.callingEvents.forEach(e => {
@@ -70,4 +68,4 @@ class Events {
         });
     }
 }
-exports.default = Events;
+exports.Events = Events;

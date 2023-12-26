@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Functions = void 0;
 class Functions {
     constructor() {
         this.functions = [];
@@ -13,4 +14,4 @@ class Functions {
         });
     }
 }
-exports.default = Functions;
+exports.Functions = Functions;

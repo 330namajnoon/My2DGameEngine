@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EntityManager = void 0;
 class EntityManager {
     constructor() {
         this.entitys = [];
@@ -22,4 +23,4 @@ class EntityManager {
         });
     }
 }
-exports.default = EntityManager;
+exports.EntityManager = EntityManager;

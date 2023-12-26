@@ -1,4 +1,4 @@
-import Asset, { Type } from "./Asset";
+import { Asset, Type } from "./Asset";
 
 
 export type ElementTypeMap = {
@@ -6,7 +6,7 @@ export type ElementTypeMap = {
     audio: HTMLAudioElement;
     video: HTMLVideoElement;
 }
-export default class AssetsManager {
+export class AssetsManager {
     private assets: any[] = [];
 
     find<T extends keyof ElementTypeMap>(type: T, name: string): ElementTypeMap[T] {

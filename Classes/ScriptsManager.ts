@@ -1,10 +1,10 @@
-import GameEngine from "../GameEngine";
+import { GameEngine } from "../GameEngine";
 
-export default class ScriptsManager<EntityType> {
+export class ScriptsManager<EntityType> {
     app: GameEngine;
     entity: EntityType;
     scripts: any[] = [];
-    constructor (entity: EntityType, app: GameEngine) {
+    constructor(entity: EntityType, app: GameEngine) {
         this.entity = entity;
         this.app = app;
     }

@@ -1,5 +1,5 @@
-import Animation from "./Animation";
-export default class AnimationManager {
+import { Animation } from "./Animation";
+export class AnimationManager {
     private animations: Animation[];
     private currentAnimation: Animation;
     constructor(animations: Animation[]) {

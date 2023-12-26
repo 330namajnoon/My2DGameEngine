@@ -1,4 +1,4 @@
-import GameEngine from "../GameEngine";
+import { GameEngine } from "../GameEngine";
 
 export type Type = "image" | "audio" | "video";
 export type ElementMap = {
@@ -7,7 +7,7 @@ export type ElementMap = {
     video: HTMLVideoElement;
 };
 
-export default class Asset {
+export class Asset {
     name: string;
     type: Type;
     url: string;

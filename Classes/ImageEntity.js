@@ -1,17 +1,15 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const AnimationsManager_1 = __importDefault(require("./AnimationsManager"));
-const Entity_1 = __importDefault(require("./Entity"));
-const Vector2_1 = __importDefault(require("./Vector2"));
-const Events_1 = __importDefault(require("./Events"));
-const ScriptsManager_1 = __importDefault(require("./ScriptsManager"));
-class ImageEntity extends Entity_1.default {
-    constructor(name = "New entity", position = new Vector2_1.default(0, 0), rotation = 0, size = new Vector2_1.default(100, 100), side, sprites, app) {
+exports.ImageEntity = void 0;
+const AnimationsManager_1 = require("./AnimationsManager");
+const Entity_1 = require("./Entity");
+const Vector2_1 = require("./Vector2");
+const Events_1 = require("./Events");
+const ScriptsManager_1 = require("./ScriptsManager");
+class ImageEntity extends Entity_1.Entity {
+    constructor(name = "New entity", position = new Vector2_1.Vector2(0, 0), rotation = 0, size = new Vector2_1.Vector2(100, 100), side, sprites, app) {
         super(name, position, rotation, size);
-        this.events = new Events_1.default();
+        this.events = new Events_1.Events();
         this.draw = () => {
             var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w;
             const { image, cutting, frame } = this.animations.getCurrentAnimation().getCurrentSprite();
@@ -68,13 +66,13 @@ class ImageEntity extends Entity_1.default {
             this.animations.getCurrentAnimation().renderer();
             this.childrens.update();
         };
-        this.animations = new AnimationsManager_1.default(sprites);
+        this.animations = new AnimationsManager_1.AnimationManager(sprites);
         this.side = side;
         this.app = app;
-        this.scripts = new ScriptsManager_1.default(this, this.app);
+        this.scripts = new ScriptsManager_1.ScriptsManager(this, this.app);
     }
     setSide(side) {
         this.side = side;
     }
 }
-exports.default = ImageEntity;
+exports.ImageEntity = ImageEntity;

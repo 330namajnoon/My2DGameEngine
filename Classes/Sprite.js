@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Sprite = void 0;
 class Sprite {
     constructor(image, cutting, frame) {
         this.callBacks = [];
@@ -14,4 +15,4 @@ class Sprite {
         return this.callBacks;
     }
 }
-exports.default = Sprite;
+exports.Sprite = Sprite;

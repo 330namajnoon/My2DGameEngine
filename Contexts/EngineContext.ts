@@ -1,8 +1,8 @@
 
-import Events from "../Classes/Events.js";
-import Functions from "../Classes/Functions.js";
-import PhysicsEnginManager from "../Classes/PhysicsEnginManager.ts";
-import GameEngine from "../GameEngine.js";
+import { Events } from "../Classes/Events.js";
+import { Functions } from "../Classes/Functions.js";
+import { PhysicsEnginManager } from "../Classes/PhysicsEnginManager.ts";
+import { GameEngine } from "../GameEngine.js";
 
 class EngineContext {
     ctx!: CanvasRenderingContext2D | null;

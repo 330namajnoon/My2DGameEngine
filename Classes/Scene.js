@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Scene = void 0;
 class Scene {
     constructor() {
         this.entitys = [];
@@ -8,4 +9,4 @@ class Scene {
         this.entitys.push(entity);
     }
 }
-exports.default = Scene;
+exports.Scene = Scene;

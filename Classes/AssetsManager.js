@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AssetsManager = void 0;
 class AssetsManager {
     constructor() {
         this.assets = [];
@@ -54,4 +55,4 @@ class AssetsManager {
         });
     }
 }
-exports.default = AssetsManager;
+exports.AssetsManager = AssetsManager;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AnimationManager = void 0;
 class AnimationManager {
     constructor(animations) {
         this.animations = animations;
@@ -19,4 +20,4 @@ class AnimationManager {
         return this.currentAnimation;
     }
 }
-exports.default = AnimationManager;
+exports.AnimationManager = AnimationManager;

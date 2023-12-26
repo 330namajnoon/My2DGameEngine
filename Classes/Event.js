@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Event = void 0;
 //export type CallBackType = MouseEvent | KeyboardEvent;
 class Event {
     constructor(type, callBack, bodys, key) {
@@ -9,4 +10,4 @@ class Event {
         this.callBack = callBack;
     }
 }
-exports.default = Event;
+exports.Event = Event;

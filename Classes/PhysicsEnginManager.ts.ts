@@ -1,6 +1,6 @@
-import {Body, Engine, World} from "matter-js"
+import { Body, Engine, World } from "matter-js"
 
-export default class PhysicsEnginManager {
+export class PhysicsEnginManager {
     engine: Engine = Engine.create();
 
     worldAdd(body: Body) {

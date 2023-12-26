@@ -1,9 +1,9 @@
-import Entity from "./Entity";
-import ImageEntity from "./ImageEntity";
+import { Entity } from "./Entity";
+import { ImageEntity } from "./ImageEntity";
 export type EntityType = Entity | ImageEntity;
 
 
-export default class ChildrensManager {
+export class ChildrensManager {
     entity: EntityType;
     childrens: EntityType[] = [];
 

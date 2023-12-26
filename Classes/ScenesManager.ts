@@ -1,7 +1,7 @@
-import App from "./App";
+import { App } from "./App";
 
 
-export default class ScenesManager extends App {
+export class ScenesManager extends App {
     scenes: any[] = [];
     currentScene!: { name: string, scene: any };
     append(name: string, scene: any) {

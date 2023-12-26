@@ -1,6 +1,6 @@
-import Sprite from "./Sprite";
+import { Sprite } from "./Sprite";
 
-export default class Animation {
+export class Animation {
     private loop: boolean = true;
     private frame: number = 0;
     private isPlayed: boolean = false;
