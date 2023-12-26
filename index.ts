@@ -19,7 +19,8 @@ import Events from "./Classes/Events";
 import Event from "./Classes/Event";
 import Scene from "./Classes/Scene";
 import ScenesManager from "./Classes/ScenesManager";
-const INDEX = {
+
+module.exports = {
     Engine,
     Animation,
     Asset,
@@ -41,6 +42,4 @@ const INDEX = {
     Event,
     Scene,
     ScenesManager,
-};
-
-export default INDEX;
+}
