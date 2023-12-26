@@ -1,0 +1,16 @@
+{
+  "name": "My2DGameEngine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/matter-js": "^0.19.5",
+    "matter-js": "^0.19.0"
+  }
+}
