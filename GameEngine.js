@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.GameEngine = void 0;
 const matter_js_1 = require("matter-js");
 const AssetsManager_1 = __importDefault(require("./Classes/AssetsManager"));
 const EntitysManager_1 = __importDefault(require("./Classes/EntitysManager"));
@@ -71,4 +72,4 @@ class GameEngine {
         return new PhysicBody_1.default(x, y, polygons, options, this);
     }
 }
-exports.default = GameEngine;
+exports.GameEngine = GameEngine;

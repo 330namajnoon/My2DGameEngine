@@ -3,8 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = void 0;
-const GameEngine_1 = __importDefault(require("./GameEngine"));
+exports.GameEngine = void 0;
 const Animation_1 = __importDefault(require("./Classes/Animation"));
 const Asset_1 = __importDefault(require("./Classes/Asset"));
 const AssetsManager_1 = __importDefault(require("./Classes/AssetsManager"));
@@ -25,10 +24,9 @@ const Events_1 = __importDefault(require("./Classes/Events"));
 const Event_1 = __importDefault(require("./Classes/Event"));
 const Scene_1 = __importDefault(require("./Classes/Scene"));
 const ScenesManager_1 = __importDefault(require("./Classes/ScenesManager"));
-var GameEngine_2 = require("./GameEngine");
-Object.defineProperty(exports, "default", { enumerable: true, get: function () { return __importDefault(GameEngine_2).default; } });
+var GameEngine_1 = require("./GameEngine");
+Object.defineProperty(exports, "GameEngine", { enumerable: true, get: function () { return GameEngine_1.GameEngine; } });
 module.exports = {
-    Engine: GameEngine_1.default,
     Animation: Animation_1.default,
     Asset: Asset_1.default,
     AssetsManager: AssetsManager_1.default,

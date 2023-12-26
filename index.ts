@@ -1,4 +1,4 @@
-import Engine from "./GameEngine";
+
 import Animation from "./Classes/Animation";
 import Asset from "./Classes/Asset";
 import AssetsManager from "./Classes/AssetsManager";
@@ -20,10 +20,9 @@ import Event from "./Classes/Event";
 import Scene from "./Classes/Scene";
 import ScenesManager from "./Classes/ScenesManager";
 
-export {default} from "./GameEngine";
+export {GameEngine} from "./GameEngine"
 
 module.exports = {
-    Engine,
     Animation,
     Asset,
     AssetsManager,

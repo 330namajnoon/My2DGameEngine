@@ -15,7 +15,7 @@ import Vector2 from "./Classes/Vector2";
 import engineContext from "./Contexts/EngineContext";
 import Scene from "./Classes/Scene";
 
-export default class GameEngine {
+export class GameEngine {
     engine: PhysicsEnginManager = new PhysicsEnginManager();
     frame: number = 0;
     canvas: HTMLCanvasElement;
