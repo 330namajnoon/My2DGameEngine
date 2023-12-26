@@ -26,7 +26,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = exports.matterjs = void 0;
 const matterjs = __importStar(require("matter-js"));
 exports.matterjs = matterjs;
-require("@types/matter-js");
 var Animation_1 = require("./Classes/Animation");
 Object.defineProperty(exports, "Animation", { enumerable: true, get: function () { return Animation_1.Animation; } });
 var Asset_1 = require("./Classes/Asset");
