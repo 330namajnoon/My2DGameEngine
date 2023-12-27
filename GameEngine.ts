@@ -1,4 +1,4 @@
-import { IBodyDefinition, Vector } from "matter-js";
+import { IBodyDefinition, Vector } from "./Types/matter-js";
 import { Animation } from "./Classes/Animation";
 import { Asset } from "./Classes/Asset";
 import { AssetsManager } from "./Classes/AssetsManager";
