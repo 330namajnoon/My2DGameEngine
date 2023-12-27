@@ -1,31 +1,6 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = exports.matterjs = void 0;
-const matterjs = __importStar(require("matter-js"));
-exports.matterjs = matterjs;
+exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = void 0;
 var Animation_1 = require("./Classes/Animation");
 Object.defineProperty(exports, "Animation", { enumerable: true, get: function () { return Animation_1.Animation; } });
 var Asset_1 = require("./Classes/Asset");
