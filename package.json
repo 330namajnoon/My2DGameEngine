@@ -1,23 +1,20 @@
 {
-  "name": "my2d-gameEngine",
+  "name": "gameengine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "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",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "matter-js": "^0.19.0"
-  },
-  "peerDependencies": {
-    "matter-js": "^0.19.0"
-  },
   "devDependencies": {
     "@types/matter-js": "^0.19.5",
-    "ts-loader": "^9.5.1",
+    "@types/node": "^20.10.5",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "matter-js": "^0.19.0"
   }
 }

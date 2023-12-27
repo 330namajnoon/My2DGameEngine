@@ -1,5 +1,4 @@
-import * as matterjs from "matter-js";
-export { matterjs }
+
 export { Animation } from "./Classes/Animation";
 export { Asset } from "./Classes/Asset";
 export { AssetsManager } from "./Classes/AssetsManager";
