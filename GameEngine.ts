@@ -40,9 +40,7 @@ export class GameEngine {
         this.entitys.update();
         this.functions.update();
         this.events.calling();
-        this.scenes.scenes.forEach((scene) => {
-            if (scene.update) scene.update();
-        });
+        this.scenes.update();
         requestAnimationFrame(this.update.bind(this));
     }
 

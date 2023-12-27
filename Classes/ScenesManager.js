@@ -30,5 +30,9 @@ class ScenesManager extends App_1.App {
         else
             return false;
     }
+    update() {
+        if (this.currentScene.scene.update)
+            this.currentScene.scene.update();
+    }
 }
 exports.ScenesManager = ScenesManager;

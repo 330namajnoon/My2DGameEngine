@@ -28,4 +28,9 @@ export class ScenesManager extends App {
             return false;
     }
 
+    update(): void {
+        if (this.currentScene.scene.update)
+            this.currentScene.scene.update()
+    }
+
 }
