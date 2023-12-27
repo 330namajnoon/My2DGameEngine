@@ -21,4 +21,5 @@ export { Scene } from "./Classes/Scene";
 export { ScenesManager } from "./Classes/ScenesManager";
 export { GameEngine } from "./GameEngine"
 
-export { Vector, Body, Bodies } from "matter-js";
+import * as Matter from "matter-js";
+export {Matter};

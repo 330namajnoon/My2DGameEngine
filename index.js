@@ -1,6 +1,29 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Bodies = exports.Body = exports.Vector = exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = void 0;
+exports.Matter = exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = void 0;
 var Animation_1 = require("./Classes/Animation");
 Object.defineProperty(exports, "Animation", { enumerable: true, get: function () { return Animation_1.Animation; } });
 var Asset_1 = require("./Classes/Asset");
@@ -43,7 +66,5 @@ var ScenesManager_1 = require("./Classes/ScenesManager");
 Object.defineProperty(exports, "ScenesManager", { enumerable: true, get: function () { return ScenesManager_1.ScenesManager; } });
 var GameEngine_1 = require("./GameEngine");
 Object.defineProperty(exports, "GameEngine", { enumerable: true, get: function () { return GameEngine_1.GameEngine; } });
-var matter_js_1 = require("matter-js");
-Object.defineProperty(exports, "Vector", { enumerable: true, get: function () { return matter_js_1.Vector; } });
-Object.defineProperty(exports, "Body", { enumerable: true, get: function () { return matter_js_1.Body; } });
-Object.defineProperty(exports, "Bodies", { enumerable: true, get: function () { return matter_js_1.Bodies; } });
+const Matter = __importStar(require("matter-js"));
+exports.Matter = Matter;
