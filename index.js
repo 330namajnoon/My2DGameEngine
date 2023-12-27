@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = void 0;
+exports.Vector = exports.GameEngine = exports.ScenesManager = exports.Scene = exports.Event = exports.Events = exports.AnimationManager = exports.Functions = exports.ChildrensManager = exports.PhisicBody = exports.PhysicsEnginManager = exports.Sprite = exports.Vector6 = exports.Vector2 = exports.ScriptsManager = exports.Script = exports.ImageEntity = exports.EntityManager = exports.Entity = exports.AssetsManager = exports.Asset = exports.Animation = void 0;
 var Animation_1 = require("./Classes/Animation");
 Object.defineProperty(exports, "Animation", { enumerable: true, get: function () { return Animation_1.Animation; } });
 var Asset_1 = require("./Classes/Asset");
@@ -43,3 +43,5 @@ var ScenesManager_1 = require("./Classes/ScenesManager");
 Object.defineProperty(exports, "ScenesManager", { enumerable: true, get: function () { return ScenesManager_1.ScenesManager; } });
 var GameEngine_1 = require("./GameEngine");
 Object.defineProperty(exports, "GameEngine", { enumerable: true, get: function () { return GameEngine_1.GameEngine; } });
+var matter_js_1 = require("matter-js");
+Object.defineProperty(exports, "Vector", { enumerable: true, get: function () { return matter_js_1.Vector; } });

@@ -20,3 +20,5 @@ export { Event } from "./Classes/Event";
 export { Scene } from "./Classes/Scene";
 export { ScenesManager } from "./Classes/ScenesManager";
 export { GameEngine } from "./GameEngine"
+
+export {Vector} from 'matter-js'
